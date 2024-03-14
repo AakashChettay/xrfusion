@@ -838,14 +838,14 @@ footer .container {
   background: linear-gradient(
     270deg,
     #ffcc00,
-    #d0d0d0,
+    #b14949,
     #870da0,
-    #d0d0d0,
+    #8ea437,
     #ffcc00,
-    #d0d0d0
+    #b572d8
   );
   background-size: 400% 400%;
-  animation: rotateStrip 2s linear infinite;
+  animation: rotateStrip 10s linear infinite;
   border-radius: 10px;
 }
 
@@ -1150,9 +1150,10 @@ h6 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   nav {
-    display: none !important;
+    display: visible !important;
+    width: 100%;
   }
   body {
     margin: 0 !important;
@@ -1375,7 +1376,7 @@ h6 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 456px) {
   /* Your CSS styles for XS devices go here */
   body h1 {
     font-size: 20px !important;
@@ -1454,4 +1455,9 @@ h6 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
+}
+
+.container_register 
+{
+box-shadow: 0px 0px 5px rgb(40, 160, 54),0px 0px 15px rgb(62, 221, 62),0px 0px 15px rgb(87, 172, 87);
 }
