@@ -1465,3 +1465,7 @@ body {
   .fony{
     font-size: 12px;
   }
+  
+  .faculty_style{
+  text-decoration:underline !important;
+  }
