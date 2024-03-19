@@ -184,7 +184,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 
-// popup 
+/* popup 
 const popup =document.querySelector('.popup');
 const close =document.querySelector('.close');
 window.onload = function(){
@@ -195,4 +195,21 @@ popup.style.display = "block"
 close.addEventListener('click', () => 
 {
      popup.style.display = "none"; 
-    })
+    })*/
+
+const popup = document.querySelector('.popup');
+const close = document.querySelector('.popup .close');
+const body = document.querySelector('body');
+
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display = "block";
+        body.classList.add('blurred-background'); // Apply blur effect to background
+    }, 2000);
+}
+
+close.addEventListener('click', () => {
+    popup.style.display = "none";
+    body.classList.remove('blurred-background'); // Remove blur effect from background
+});
+
