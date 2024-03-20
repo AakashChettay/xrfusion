@@ -1568,11 +1568,10 @@ width: 600px;
       height: 50%;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   
   .popup .contentBox {
-      width: 600px; 
-      max-width: 90%; 
+      width:100%
   }
 
   .popup .contentBox .imgBx {
